@@ -1,0 +1,129 @@
+<html>
+<head>
+    <title>jQuery Examples</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <script>
+        var x = 5;
+        var calisan = {
+            isim: "Mert",
+            yas: 30,
+            is: "egitim"
+        };
+
+        //$(document).ready(function () {
+        //    $("div").click(function (event) { //Callback
+        //        alert("Týklandý:  " + event.target);
+        //    });
+        //});
+
+        //$(document).ready(function () { //karakter çaðýrma
+        //    $("div").click(function () {
+        //        var yazi = "abcdefghýijklmnoprst"
+        //        alert(yazi.charAt);
+        //    });
+        //});
+
+        //$(document).ready(function () { // iki yazýyý birleþtirme
+        //    $("div").click(function () {
+        //        var yazi = "abcdefghýijklmnoprst"
+        //        var yazi2 = "uüvyz"
+        //        alert(yazi.concat(yazi2));
+        //    });
+        //});
+
+
+        //$(document).ready(function () { // iki yazýyý ayrý ayrý gösterme
+        //    $("div").click(function () {
+        //        var yazi = "abcdefghýijklmnoprst"
+        //        var yazi2 = ["uüvyz","abcdef"];
+
+        //        function alerting(item) {
+        //            alert(item);
+        //        }
+
+        //        yazi2.forEach(alerting);
+        //    });
+        //});
+
+        //$(document).ready(function () {
+        //    $("div").click(function () {
+        //        var yazi = "Merhaba Dünya, Evren'e Hoþgeldin!";
+        //        alert(
+        //            /*yazi.indexOf("Evren") //bu yapý evren kelimesinin olduðu alanýn indexini alýyor ve ekrana veriyor ama önemli!! evren kelimesi birden fazla yerde varsa onlarý da getirecektir.*/
+        //            yazi.length // karakter bilgisini gösterir
+        //        );
+        //    });
+        //});
+
+        //$(document).ready(function () {
+        //    $("div").click(function () {
+        //        var yazi = "Merhaba Dünya, Evren'e Hoþgeldin!";
+        //        alert(
+        //            //yazi.substr(5)//bu yapý 5. karakterden itibaren kes demek
+        //            yazi.substr(5,12) //bu yapý 5. karakterden itibaren kes sondan 12. karaktere kadar demek
+        //        );
+        //    });
+        //});
+
+        //$(document).ready(function () {
+        //    $("div").click(function () { //evren kelimesini bulup ekrana yazdýrma
+        //        var yazi = "Merhaba Dünya, Evren'e Hoþgeldin!";
+        //        var evren = "Evren";
+        //        eIndex = yazi.indexOf("Evren");
+        //        eLength = evren.length;
+
+        //        alert(
+        //            yazi.substr(eIndex, eLength)
+        //        );
+        //    });
+        //});
+
+        //$(document).ready(function () {
+        //    $("div").click(function () {
+        //        var yazi = "Merhaba Dünya, Evren'e Hoþgeldin!";
+
+        //        alert(
+
+        //            yazi.toUpperCase()//büyük harf yapma
+        //            //yazi.toLowerCase()//küçük harfe dönüþtürüyor
+        //        );
+        //    });
+        //});
+
+        //$(document).ready(function () {
+        //    $("div").click(function () {
+        //        var dizi = [3,2,7,8,9,1,4,6,5];
+        //        alert(
+        //           // dizi.sort() //sýralý yazdýrýr
+        //            dizi.sort().reverse() //önce sýrala sonra tersten yaz
+        //        );
+        //    });
+        //});
+
+
+        //pop : dizinin son elemeanýný alýp getirir
+        $(document).ready(function () {
+            $("div").click(function () {
+                var dizi = [3, 2, 7, 8, 9, 1, 4, 6, 5];
+                alert(
+                    dizi.pop() // dizinin son elemanýný getirir.
+                );
+                alert(
+                    dizi //son elemaný cýkarmak icinde kullanýlýr
+                );
+            });
+        });
+
+    </script>
+
+</head>
+<body>
+
+    <div id="yeni_div">
+        Dialog kutusunu görmek için buraya týklayýnýz!
+    </div>
+
+</body>
+</html>
